@@ -1,0 +1,93 @@
+<html>
+<meta charset="utf-8" />
+<head>
+	<title>Gyro car1</title>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.2/dat.gui.min.js"></script>
+	<script src="http://home.hib.no/prosjekter/dynamics/Libraries/jquery/jquery-2.1.1.min.js"></script>
+	<script src="http://home.hib.no/prosjekter/dynamics/Libraries/jqMobile/jquery.mobile-1.4.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/92/three.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/92/three.min.js"></script>
+	<script src="https://dl.dropbox.com/s/nn9wz6aimz6vzoi/OBJLoader.js?dl=0"></script>
+	<script src="https://dl.dropbox.com/s/2821pj5wkc2b8pe/MTLLoader.js?dl=0"></script>
+	<script src="https://dl.dropbox.com/s/qxgrvxduynnst3u/OrbitControls.js?dl=0"></script>
+	<!--<script src="gim_both.js"></script>
+	<script src="gim_M0.js"></script> 
+	 <script src="gim_M1.js"></script>
+	<script src="gim_M2.js"></script>
+	<script src="R1_both.js"></script>
+	<script src="R1_M0.js"></script>
+	<script src="R1_M1.js"></script>
+	<script src="R1_M2.js"></script>-->
+
+
+
+
+
+
+
+	<script src="sky.js"></script>
+	<script src="mainn.js"></script>
+
+	<script src="http://home.hib.no/prosjekter/dynamics/Libraries/MyLibrary/FormatLibrary.js"></script>
+	<link rel="stylesheet" href="style.css">
+	 <link rel = "stylesheet"
+   			type = "text/css"
+   			href = "http://home.hib.no/prosjekter/dynamics/Libraries/jqMobile/jquery.mobile-1.4.3.min.css">
+			   <style>
+				body {
+					color: #444;
+				}
+				a {
+					color: #08f;
+				}
+			</style>
+			<style>
+				#redirect-button {
+					display: block;
+					position: fixed;
+					top: 0;
+					left: 150;
+					padding: 5px 10px;
+					font-size: 14px;
+					background-color: #0077cc;
+					color: #fff;
+					border: none;
+					border-radius: 3px;
+					cursor: pointer;
+					width: 100px;
+				}
+			</style>
+		</head>
+<body style="margin: 0px;">
+	
+	<div data-role="popup" id="videoPopupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div data-role="content" class="ui-corner-bottom ui-content">
+		  <video width="320" height="240" controls>
+			<source src="models/IMG_2702(3).mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+		</div>
+	  </div>
+	  
+	  <a href="#videoPopupDialog" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Watch Video</a>
+	  
+
+
+	<div id="myCanvas">  </div>
+
+	<button id="redirect-button" onclick="redirectToUrl()">yaw</button>
+
+<script>
+	function redirectToUrl() {
+		window.open("index1.html", "_blank");
+	}
+</script>
+
+
+	
+
+</body>
+
+</html>
